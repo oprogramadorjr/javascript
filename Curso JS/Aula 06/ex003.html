@@ -19,8 +19,19 @@
     <h1>Olá, Mundo!</h1> <!-- Comentario em Html -->
     <p>Já me livrei da maldição</p>
     <script>
-        var n1 = window.prompt ('Digite um número')
-        var n2 = window.prompt ('Digite outro número')
+        /*
+        var s = 'JavaScript' // não faz interpolação 
+        'Eu estou aprendendo s' // usa concatenação
+        `Eu estou aprendendo ${s} // usa tamplate string 
+        */
+
+        var n1 = Number(window.prompt ('Digite um número')) //string 
+        var n2 = Number(window.prompt ('Digite outro número')) //string 
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        
+        // (number + number) serve para adição 
+        // (string + string) serve para concatenação
     </script>
 </body>
 </html>
